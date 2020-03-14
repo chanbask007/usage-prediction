@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style >
+      body{
+        text-align:center;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>my website</title>
+  </head>
+  <body>
+    {% if is_new_year%}
+      <h1>happy new year..!!</h1>
+    {%else%}
+        <h1>no</h1>
+    {%endif%}
+
+    <form action={{url_for('hello')}} method="post">
+      <input type="text" name="name" placeholder="Enter Name">
+      <button>Submit</button>
+      
+    </form>
+
+  </body>
+</html>
